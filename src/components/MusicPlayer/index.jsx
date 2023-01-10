@@ -56,7 +56,7 @@ const MusicPlayer = () => {
       dispatch(prevSong(currentIndex - 1));
     }
   };
-  console.log(activeSong);
+
   return (
     <div className="relative sm:px-12 px-8 w-full flex items-center justify-between">
       <Track
