@@ -24,7 +24,7 @@ const MusicPlayer = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (currentSongs) dispatch(playPause(true));
+    if (currentSongs.length) dispatch(playPause(true));
   }, [currentIndex]);
 
   const handlePlayPause = () => {
